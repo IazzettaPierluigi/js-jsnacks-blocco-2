@@ -6,25 +6,29 @@ let numeroCasuale = Math.floor(Math.random() * 100) + 1;
 //faccio inserire il numero all'utente
 let numeroUtente = prompt('inserisci un numero')
 
-console.log(numeroCasuale, numeroUtente)
 
 
 numeroUtente = parseFloat(numeroUtente);
 
-document.writeln(numeroCasuale, numeroUtente);
+console.log(numeroCasuale, numeroUtente);
 
 
 while (numeroUtente !== numeroCasuale) {
     
     if (numeroUtente > numeroCasuale) {
-        let numeroUtente = prompt('il numero è troppo alto')
+         numeroUtente = prompt('il numero è troppo alto')
+
+         numeroUtente = parseFloat(numeroUtente);
+
     } else if (numeroUtente < numeroCasuale) {
-        let numeroUtente = prompt('il numero è troppo basso')
+         numeroUtente = prompt('il numero è troppo basso')
+
+         numeroUtente = parseFloat(numeroUtente);
+
     } else {
-        document.writeln(`hai indovinato, il numero è: ${numeroUtente}`)
+        console.log(numeroUtente)
     }
 
     
 }
 
-document.writeln(numeroCasuale, numeroUtente);
