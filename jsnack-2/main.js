@@ -2,3 +2,22 @@
 
 //genero il numero casuale
 let numeroCasuale = Math.floor(Math.random() * 100) + 1;
+
+//faccio inserire il numero all'utente
+let numeroUtente = prompt('inserisci un numero')
+
+console.log(numeroCasuale, numeroUtente)
+
+
+numeroUtente = parseFloat(numeroUtente);
+
+document.writeln(numeroCasuale, numeroUtente);
+
+
+while (numeroUtente < numeroCasuale) {
+    let numeroUtente = prompt("il tuo numero è troppo basso, inseriscine un altro")
+
+    
+}
+
+document.writeln(numeroCasuale, numeroUtente);
