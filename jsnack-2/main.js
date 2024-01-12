@@ -14,8 +14,15 @@ numeroUtente = parseFloat(numeroUtente);
 document.writeln(numeroCasuale, numeroUtente);
 
 
-while (numeroUtente < numeroCasuale) {
-    let numeroUtente = prompt("il tuo numero è troppo basso, inseriscine un altro")
+while (numeroUtente !== numeroCasuale) {
+    
+    if (numeroUtente > numeroCasuale) {
+        let numeroUtente = prompt('il numero è troppo alto')
+    } else if (numeroUtente < numeroCasuale) {
+        let numeroUtente = prompt('il numero è troppo basso')
+    } else {
+        document.writeln(`hai indovinato, il numero è: ${numeroUtente}`)
+    }
 
     
 }
