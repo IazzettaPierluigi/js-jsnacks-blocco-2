@@ -10,7 +10,7 @@ let numeroUtente = prompt('inserisci un numero')
 
 numeroUtente = parseFloat(numeroUtente);
 
-console.log(numeroCasuale, numeroUtente);
+
 
 
 while (numeroUtente !== numeroCasuale) {
@@ -31,4 +31,4 @@ while (numeroUtente !== numeroCasuale) {
 
     
 }
-
+console.log(numeroCasuale, numeroUtente)
